@@ -26,9 +26,12 @@ package array;
 
 import java.util.Arrays;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 /**
  * ArraySumSnippet.
  */
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class ArraySumSnippet {
 
   /**

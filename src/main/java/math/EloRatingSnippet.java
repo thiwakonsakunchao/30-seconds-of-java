@@ -24,9 +24,12 @@
 
 package math;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 /**
  * FactorialSnippet.
  */
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class EloRatingSnippet {
 
   static final int BASE = 400; //Two types are popular - 400 and 480. We will choose 400 here
@@ -47,8 +50,7 @@ public class EloRatingSnippet {
     double logisticDiff = Math.pow(10, ratingDiff);
     double firstPlayerExpectedScore = 1.0 / (1 + logisticDiff);
     double firstPlayerActualScore = result;
-    double newRating = firstPlayerRating + RATING_ADJUSTMENT_FACTOR * (firstPlayerActualScore 
-                       - firstPlayerExpectedScore);
-    return newRating;
+
+    return firstPlayerRating + RATING_ADJUSTMENT_FACTOR * (firstPlayerActualScore - firstPlayerExpectedScore);
   }
 }

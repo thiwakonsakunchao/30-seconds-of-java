@@ -27,10 +27,12 @@ package date;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 /**
  * DateDifferenceSnippet.
  */
-
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class DateDifferenceSnippet {
 
   /**

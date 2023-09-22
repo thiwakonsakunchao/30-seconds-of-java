@@ -26,9 +26,12 @@ package file;
 
 import java.io.File;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 /**
  * ListFilesInDirectorySnippet.
  */
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class ListFilesInDirectorySnippet {
 
   /**

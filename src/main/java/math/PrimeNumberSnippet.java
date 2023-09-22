@@ -24,9 +24,12 @@
 
 package math;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 /**
  * PrimeNumberSnippet.
  */
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class PrimeNumberSnippet {
 
   /**

@@ -28,11 +28,13 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 /**
  * GetAllFieldNamesSnippet.
  */
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class GetAllFieldNamesSnippet {
 
   /**
@@ -49,7 +51,7 @@ public class GetAllFieldNamesSnippet {
           Arrays.stream(currentClazz.getDeclaredFields())
               .filter(field -> !field.isSynthetic())
               .map(Field::getName)
-              .collect(Collectors.toList()));
+              .toList());
       currentClazz = currentClazz.getSuperclass();
     }
     return fields;

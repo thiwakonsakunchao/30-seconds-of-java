@@ -24,9 +24,12 @@
 
 package string;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 /**
  * ReversStringSnippet.
  */
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class ReversStringSnippet {
 
   /**

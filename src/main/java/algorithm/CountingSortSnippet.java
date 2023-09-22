@@ -26,9 +26,12 @@ package algorithm;
 
 import java.util.Arrays;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 /**
  * CountingSortSnippet.
  */
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class CountingSortSnippet {
 
   /**

@@ -24,9 +24,12 @@
 
 package math;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 /**
  * LeastCommonMultipleSnippet.
  */
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class LeastCommonMultipleSnippet {
   /**
    * Least common multiple  calculation.

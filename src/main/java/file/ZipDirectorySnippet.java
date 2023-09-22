@@ -31,9 +31,12 @@ import java.io.IOException;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 /**
  * ZipDirectorySnippet.
  */
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class ZipDirectorySnippet {
 
   /**

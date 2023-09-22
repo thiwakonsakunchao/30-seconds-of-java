@@ -24,9 +24,12 @@
 
 package math;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 /**
  * LuhnSnippet.
  */
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class LuhnSnippet {
 
   /**
@@ -59,9 +62,9 @@ public class LuhnSnippet {
 
       isOddPosition = !isOddPosition;
     }
-    final var checksumDigit = (10 - (sum % 10)) % 10;
+
     // Outermost modulus handles edge case `num = 0`.
-    return checksumDigit;
+    return (10 - (sum % 10)) % 10;
   }
 
 }

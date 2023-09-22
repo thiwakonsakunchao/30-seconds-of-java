@@ -24,10 +24,15 @@
 
 package algorithm;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
+
+import java.util.Arrays;
+
 /**
  * SieveOfEratosthenesSnippet.
  */
-
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class SieveOfEratosthenesSnippet {
   /**
    * Search an item with binarySearch algorithm.
@@ -37,12 +42,10 @@ public class SieveOfEratosthenesSnippet {
    */
   public static boolean[] sieveOfEratosthenes(int n) {
     boolean[] isPrime = new boolean[n + 1];
-    for (int i = 0; i < isPrime.length; i++) {
-      isPrime[i] = true;
-    }
+      Arrays.fill(isPrime, true);
 
     for (int i = 2; i * i <= n; i++) {
-      if (isPrime[i] == true) {
+      if (isPrime[i]) {
         for (int j = i * i; j <= n; j += i) {
           isPrime[j] = false;
         }

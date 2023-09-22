@@ -26,9 +26,12 @@ package array;
 
 import java.util.Arrays;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 /**
  * FindMaxSnippet.
  */
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class FindMaxSnippet {
 
   /**

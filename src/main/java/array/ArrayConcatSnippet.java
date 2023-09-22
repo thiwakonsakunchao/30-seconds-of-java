@@ -26,9 +26,12 @@ package array;
 
 import java.util.Arrays;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 /**
  * ArrayConcatSnippet.
  */
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class ArrayConcatSnippet {
 
   /**

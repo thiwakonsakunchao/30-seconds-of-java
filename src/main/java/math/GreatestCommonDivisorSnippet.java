@@ -24,9 +24,12 @@
 
 package math;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 /**
  * GreatestCommonDivisorSnippet.
  */
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class GreatestCommonDivisorSnippet {
 
   /**

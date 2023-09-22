@@ -28,9 +28,12 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 /**
  * ListAllFilesSnippet.
  */
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class ListAllFilesSnippet {
 
   /**

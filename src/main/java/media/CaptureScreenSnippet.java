@@ -32,9 +32,12 @@ import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 /**
  * CaptureScreenSnippet.
  */
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class CaptureScreenSnippet {
 
   /**

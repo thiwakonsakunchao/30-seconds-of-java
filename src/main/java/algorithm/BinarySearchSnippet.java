@@ -24,10 +24,12 @@
 
 package algorithm;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 /**
  * BinarySearchSnippet.
  */
-
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class BinarySearchSnippet {
 
   /**

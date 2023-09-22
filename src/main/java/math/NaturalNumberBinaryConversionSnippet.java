@@ -29,9 +29,12 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 /**
  * NaturalNumberBinaryConversionSnippet.
  */
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class NaturalNumberBinaryConversionSnippet {
 
   /**

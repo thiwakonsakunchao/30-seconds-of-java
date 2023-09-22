@@ -24,9 +24,12 @@
 
 package algorithm;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 /**
  * SelectionSortSnippet.
  */
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class SelectionSortSnippet {
 
   /**
